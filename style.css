@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.game-container {
+  text-align: center;
+}
+
+#board {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #000;
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+
+.snake {
+  background: limegreen;
+  border: 1px solid black;
+}
+
+.food {
+  background: red;
+  border-radius: 50%;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.mobile-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.mobile-controls div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.mobile-controls button {
+  width: 50px;
+  height: 50px;
+  background: #444;
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.mobile-controls button:active {
+  background: #666;
+}
